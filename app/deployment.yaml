@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: deathstar
+  annotations:
+    twistedsolutions.se/add-pod-name-label: true
   labels:
     app.kubernetes.io/name: deathstar
 spec:
